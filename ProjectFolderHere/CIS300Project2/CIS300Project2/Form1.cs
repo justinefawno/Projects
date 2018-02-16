@@ -163,11 +163,13 @@ namespace CIS300Project2
                 temp.ForeColor = Color.White;
                 temp.BackColor = Color.Black;
                 temp.setColor(false);
+                resetVisited();
             }
             else {
                 temp.ForeColor = Color.Black;
                 temp.BackColor = Color.White;
                 temp.setColor(true);
+                resetVisited();
             }
         }//end label click event handler
         /// <summary>
@@ -202,17 +204,20 @@ namespace CIS300Project2
                     for (int h = 0; h < 5; h++) {
                         if (puzzle[i, h].getNum() == temp.getNum() && h != j) {
                             allMoves.Add(temp);
+                            break;
                         }
                         else if (puzzle[h, j].getNum() == temp.getNum() && h != i)
                         {
                             allMoves.Add(temp);
+                            break;
                         }
 
                     }
 
                 }
             }
-
+            
+            Console.WriteLine("done finding moves");
             /*int[,] nums = new int[5, 5];
 
 
@@ -307,6 +312,9 @@ namespace CIS300Project2
             if (SolvePuzzle(allMoves, 0) == false)
             {
                 MessageBox.Show("No solution");
+            }
+            else {
+                MessageBox.Show("done");
             }
 
 
@@ -425,7 +433,7 @@ namespace CIS300Project2
 
             return SolvePuzzle(allMoves, pos + 1);
 
-
+            
 
 
         }//end solve puzzle method
@@ -441,11 +449,7 @@ namespace CIS300Project2
                 return false;
             }//end check to see if puzzle was loaded
 
-            for (int i = 0; i < 5; i++) {
-                for (int j = 0; j < 5; j++) {
-                    puzzle[i, j].setVisited(false);
-                }
-            }
+            resetVisited();
 
             for (int i = 0; i < 5; i++)
             {
@@ -476,7 +480,7 @@ namespace CIS300Project2
                     num5 = -5;
                 }
 
-                if (num1 == num2 || num1 == num3 || num1 == num4 || num2 == num3 || num2 == num4 || num3 == num4)
+                if (num1 == num2 || num1 == num3 || num1 == num4 || num2 == num3 || num2 == num4 || num3 == num4 || num1 == num5 || num5 == num2 || num3 == num5 || num4 == num5)
                 {
                     return false;
                 }
@@ -511,7 +515,7 @@ namespace CIS300Project2
                     num5 = -5;
                 }
 
-                if (num1 == num2 || num1 == num3 || num1 == num4 || num2 == num3 || num2 == num4 || num3 == num4)
+                if (num1 == num2 || num1 == num3 || num1 == num4 || num2 == num3 || num2 == num4 || num3 == num4 || num1 == num5 || num5 == num2 || num3 == num5 || num4 == num5)
                 {
                     return false;
                 }
@@ -612,7 +616,18 @@ namespace CIS300Project2
             return false;
         }//end check solution method
 
-
+        /// <summary>
+        /// resets visited status
+        /// </summary>
+        public void resetVisited() {
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    puzzle[i, j].setVisited(false);
+                }
+            }
+        }
 
     }
 }
