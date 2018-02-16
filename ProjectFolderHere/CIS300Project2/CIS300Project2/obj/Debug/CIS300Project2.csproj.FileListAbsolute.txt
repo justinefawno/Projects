@@ -1,0 +1,10 @@
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\bin\Debug\CIS300Project2.exe.config
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\bin\Debug\CIS300Project2.exe
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\bin\Debug\CIS300Project2.pdb
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.csprojResolveAssemblyReference.cache
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.Form1.resources
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.Properties.Resources.resources
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.csproj.GenerateResource.Cache
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.csproj.CoreCompileInputs.cache
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.exe
+C:\Users\justi\source\repos\CIS300Project2\CIS300Project2\obj\Debug\CIS300Project2.pdb
