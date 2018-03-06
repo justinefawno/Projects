@@ -1,0 +1,7 @@
+c:\users\justi\source\repos\Project 9\Project 9\bin\Debug\Proj9.exe.config
+c:\users\justi\source\repos\Project 9\Project 9\bin\Debug\Proj9.exe
+c:\users\justi\source\repos\Project 9\Project 9\bin\Debug\Proj9.pdb
+c:\users\justi\source\repos\Project 9\Project 9\obj\Debug\Project 9.csprojResolveAssemblyReference.cache
+c:\users\justi\source\repos\Project 9\Project 9\obj\Debug\Project 9.csproj.CoreCompileInputs.cache
+c:\users\justi\source\repos\Project 9\Project 9\obj\Debug\Proj9.exe
+c:\users\justi\source\repos\Project 9\Project 9\obj\Debug\Proj9.pdb
